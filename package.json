@@ -1,0 +1,21 @@
+{
+  "name": "supply-chain-dapp",
+  "version": "1.0.0",
+  "description": "Blockchain Supply Chain DApp on Polygon",
+  "scripts": {
+    "compile":  "hardhat compile",
+    "test":     "hardhat test",
+    "deploy:local":  "hardhat run scripts/deploy.js --network hardhat",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "deploy:amoy":   "hardhat run scripts/deploy.js --network amoy",
+    "node":     "hardhat node",
+    "verify":   "hardhat verify --network mumbai"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
